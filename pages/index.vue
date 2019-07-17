@@ -1,7 +1,7 @@
 <template>
   <main>
     <section id="top">
-      {{ siteName }}
+      <h1>{{ siteName }}</h1>
     </section>
     <profile />
     <skills />
@@ -12,11 +12,11 @@
 </template>
 
 <script>
-import Profile '@/containers/profile'
-import Skills '@/containers/skills'
-import Works '@/containers/works'
-import Hobbies '@/containers/hobbies'
-import Other '@/containers/other'
+import Profile from '@/containers/profile'
+import Skills from '@/containers/skills'
+import Works from '@/containers/works'
+import Hobbies from '@/containers/hobbies'
+import Other from '@/containers/other'
 
 export default {
   name: 'Top',
@@ -29,7 +29,7 @@ export default {
   },
   data() {
     return {
-      siteName: `'Erika${'}s Portfolio'`
+      siteName: 'Erika\'s Portfolio'
     }
   }
 }
