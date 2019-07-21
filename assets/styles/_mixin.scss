@@ -1,0 +1,35 @@
+@import 'color';
+
+@mixin section {
+  text-align: center;
+  margin-bottom: 150px;
+
+  .title {
+    margin-bottom: 50px;
+    font-size: 50px;
+  }
+
+}
+
+
+@mixin content-list($content-width) {
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  @media(min-width: 768px) {
+  ul {
+    margin: 0 auto;
+    padding-left: 0;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      display: block;
+      width: $content-width;
+    }
+   }
+  }
+}
