@@ -24,3 +24,21 @@
     name: 'MyHeader'
   }
 </script>
+<style lang="scss" scoped>
+  .link {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    background-color: white;
+
+
+    a {
+      width: 150px;
+    }
+  }
+</style>
