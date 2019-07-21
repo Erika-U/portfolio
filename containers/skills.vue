@@ -1,16 +1,10 @@
 <template>
-  <section id="skills">
+  <section id="skills" class="skills-wrapper">
     <pageTitle title="skills" />
-    <div>
-      <table>
-        <tbody>
-          <tr v-for="(contact, index) in contacts" :key="index">
-            <th>{{ contact.key }}</th>
-            <td>:</td>
-            <td>{{ contact.value }}</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="box-wrapper">
+    <ul>
+      <li v-for="skill in skills">{{ skill }}</li>
+    </ul>
     </div>
   </section>
 </template>
@@ -25,11 +19,30 @@
     },
     data() {
       return {
-        contacts: [
-          {key: 'Name',
-          value: 'erika'}
+        skills: [
+          'aaaaaa',
+          'bbbbbb',
+          'cccccc',
+          'dddddd',
+          'eeeeee',
+          'ffffff',
+          'ggggggg',
+          'hhhhhh',
+          'iiiiiii'
         ]
       }
     }
   }
 </script>
+
+<style lang="scss" scoped>
+  @import '@/assets/styles/_color.scss';
+  @import '@/assets/styles/_mixin.scss';
+
+  .skills-wrapper {
+    @include section;
+    @include content-list(33.3%);
+  }
+
+
+</style>

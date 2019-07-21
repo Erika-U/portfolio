@@ -1,16 +1,10 @@
 <template>
-  <section id="works">
+  <section id="works" class="works-wrapper">
     <pageTitle title="works" />
-    <div>
-      <table>
-        <tbody>
-          <tr v-for="(contact, index) in contacts" :key="index">
-            <th>{{ contact.key }}</th>
-            <td>:</td>
-            <td>{{ contact.value }}</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="box-wrapper">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   </section>
 </template>
@@ -25,7 +19,7 @@
     },
     data() {
       return {
-        contacts: [
+        works: [
           {key: 'Name',
           value: 'erika'}
         ]
@@ -33,3 +27,45 @@
     }
   }
 </script>
+
+<style lang="scss" scoped>
+  @import '@/assets/styles/_color.scss';
+  @import '@/assets/styles/_mixin.scss';
+
+  .works-wrapper {
+    @include section;
+
+    .box-wrapper {
+      div {
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+        background-color: pink;
+        display: block;
+        margin-bottom: 30px;
+        max-width: 450px;
+      }
+    }
+  }
+
+
+  @media(min-width:   1000px) {
+    div {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+
+  @media(min-width:   1200px) {
+    div {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: flex;
+      margin: 0 auto;
+      max-width: 80%;
+    }
+  }
+
+</style>

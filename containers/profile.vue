@@ -1,7 +1,7 @@
 <template>
-  <section id="profile">
+  <section id="profile" class="profile-wrapper">
     <pageTitle title="profile" />
-    <div>
+    <div class="box-wrapper">
       <table>
         <tbody>
           <tr v-for="(contact, index) in contacts" :key="index">
@@ -27,9 +27,29 @@
       return {
         contacts: [
           {key: 'Name',
+          value: 'erika'},
+          {key: 'Name',
           value: 'erika'}
         ]
       }
     }
   }
 </script>
+
+<style lang="scss" scoped>
+@import '@/assets/styles/_color.scss';
+@import '@/assets/styles/_mixin.scss';
+
+  .profile-wrapper {
+    @include section;
+
+    table {
+      margin: 0 auto;
+    }
+  }
+
+
+
+
+
+</style>

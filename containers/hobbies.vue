@@ -1,16 +1,10 @@
 <template>
-  <section id="hobbies">
+  <section id="hobbies" class="hobbies-wrapper">
     <pageTitle title="hobbies" />
-    <div>
-      <table>
-        <tbody>
-          <tr v-for="(contact, index) in contacts" :key="index">
-            <th>{{ contact.key }}</th>
-            <td>:</td>
-            <td>{{ contact.value }}</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="box-wrapper">
+      <ul>
+        <li v-for="hobbie in hobbies">{{ hobbie }}</li>
+      </ul>
     </div>
   </section>
 </template>
@@ -25,11 +19,25 @@
     },
     data() {
       return {
-        contacts: [
-          {key: 'Name',
-          value: 'erika'}
+        hobbies: [
+          'aaaaaa',
+          'aaaaaa',
+          'aaaaaa',
+          'aaaaaa',
+          'aaaaaa',
+          'aaaaaa'
         ]
       }
     }
   }
 </script>
+
+<style lang="scss" scoped>
+  @import '@/assets/styles/_color.scss';
+  @import '@/assets/styles/_mixin.scss';
+
+  .hobbies-wrapper {
+    @include section;
+    @include content-list(50%);
+  }
+</style>

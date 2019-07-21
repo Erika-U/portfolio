@@ -1,7 +1,7 @@
 <template>
-  <section id="other">
+  <section id="other" class="other-wrapper">
     <pageTitle title="other" />
-    <div>
+    <div class="box-wrapper">
       <table>
         <tbody>
           <tr v-for="(contact, index) in contacts" :key="index">
@@ -33,3 +33,16 @@
     }
   }
 </script>
+
+<style lang="scss" scoped>
+  @import '@/assets/styles/_color.scss';
+  @import '@/assets/styles/_mixin.scss';
+
+  .other-wrapper {
+    @include section;
+
+    table {
+      margin: 0 auto;
+    }
+  }
+</style>
