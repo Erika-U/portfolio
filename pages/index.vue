@@ -46,7 +46,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 200px;
+    margin-bottom: 120px;
 
     h1 {
 
