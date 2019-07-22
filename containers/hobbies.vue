@@ -20,12 +20,16 @@
     data() {
       return {
         hobbies: [
-          'aaaaaa',
-          'aaaaaa',
-          'aaaaaa',
-          'aaaaaa',
-          'aaaaaa',
-          'aaaaaa'
+          '・ 麻雀',
+          '・ 卓球',
+          '・ ヴァイオリン',
+          '・ カラオケ',
+          '・ 音楽鑑賞',
+          '・ ケーキを求めてカフェ巡り',
+          '・ ファッション/メイク',
+          '・ イラスト制作',
+          '・ 色やデザインの勉強',
+          '・ オシャレなWebサイト徘徊'
         ]
       }
     }
@@ -39,5 +43,9 @@
   .hobbies-wrapper {
     @include section;
     @include content-list(50%);
+
+    li {
+      margin-bottom: 20px;
+    }
   }
 </style>
