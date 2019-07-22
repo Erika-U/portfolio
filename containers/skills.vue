@@ -20,15 +20,16 @@
     data() {
       return {
         skills: [
-          'aaaaaa',
-          'bbbbbb',
-          'cccccc',
-          'dddddd',
-          'eeeeee',
-          'ffffff',
-          'ggggggg',
-          'hhhhhh',
-          'iiiiiii'
+          '・ HTML5&CSS3',
+          '・ PHP',
+          '・ Laravel',
+          '・ JavaScript',
+          '・ Vue.js',
+          '・ Docker',
+          '・ MySQL',
+          '・ Git',
+          '・ Redmine',
+          '・ slack'
         ]
       }
     }
@@ -42,6 +43,10 @@
   .skills-wrapper {
     @include section;
     @include content-list(33.3%);
+
+    li {
+      margin-bottom: 20px;
+    }
   }
 
 
