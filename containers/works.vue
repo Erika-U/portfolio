@@ -3,8 +3,10 @@
     <pageTitle title="works" />
     <div class="box-wrapper">
       <div>
-        <p>イメージ部分</p>
-        <p>説明部分</p>
+        <img src="@/assets/image/work1.png">
+        <p>- myPortfolio-</p>
+        <p>HTML5, SCSS, Vue.js, Nuxt.js</p>
+        <a href="https://github.com/Erika-U/portfolio">git hub</a>
       </div>
       <div></div>
       <div></div>
@@ -41,15 +43,28 @@
     .box-wrapper {
       div {
         margin: 0 auto;
-        width: 300px;
-        height: 300px;
-        background-color: pink;
+        width: 400px;
+        height: 600px;
         display: block;
         margin-bottom: 30px;
         max-width: 450px;
+
+      img {
+        width: 300px;
+        height: 300px;
+        }
+
+        a {
+          color: darken($main_color, 20%);
+
+          &:hover {
+            color: pink;
+          }
+        }
       }
     }
   }
+
 
 
   @media(min-width:   1000px) {

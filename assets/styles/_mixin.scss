@@ -3,6 +3,7 @@
 @mixin section {
   text-align: center;
   margin-bottom: 200px;
+  color: darken(white, 60%);
 
   .title {
     margin-bottom: 80px;
