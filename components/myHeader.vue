@@ -1,6 +1,9 @@
 <template>
   <header>
     <div class="link">
+      <nuxt-link v-scroll-to="'#top'" to>
+        Top
+      </nuxt-link>
       <nuxt-link v-scroll-to="'#profile'" to>
         Profile
       </nuxt-link>
