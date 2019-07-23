@@ -6,7 +6,7 @@
         <img src="@/assets/image/work1.png">
         <p>- myPortfolio-</p>
         <p>HTML5, SCSS, Vue.js, Nuxt.js</p>
-        <a href="https://github.com/Erika-U/portfolio">git hub</a>
+        <a href="https://github.com/Erika-U/portfolio" target=”_blank”>git hub</a>
       </div>
       <div></div>
       <div></div>
