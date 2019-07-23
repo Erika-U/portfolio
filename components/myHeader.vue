@@ -43,6 +43,15 @@
 
     a {
       width: 150px;
+      height: 100%;
+      padding-top: 30px;
+      text-decoration: none;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: lighten(pink, 8%);
+      }
     }
   }
 </style>

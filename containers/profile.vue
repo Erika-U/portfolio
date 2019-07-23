@@ -65,6 +65,7 @@
 
       th {
           padding-right: 20px;
+          font-size: 14.5px;
         }
 
       td {

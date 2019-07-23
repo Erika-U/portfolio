@@ -48,12 +48,11 @@
 
     .other_title {
       font-size: 20px;
-      font-weight: 600;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
     .other_data {
       width: 400px;
-      margin-bottom: 60px;
+      margin-bottom: 70px;
       }
     }
 </style>

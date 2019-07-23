@@ -40,7 +40,7 @@ export default {
   ],
   webfontloader: {
   google: {
-    families: [//ここに使用するフォント指定]
+    families: ['Julius Sans One']
   }
 },
   /*

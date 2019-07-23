@@ -49,6 +49,8 @@ export default {
     margin-bottom: 120px;
 
     h1 {
+      font-family: Julius Sans One;
+      font-size: 80px;
 
     }
   }
