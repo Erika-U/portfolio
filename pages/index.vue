@@ -42,7 +42,7 @@ export default {
   .top-wrapper {
     text-align: center;
     height: 100vh;
-    background-color: pink;
+    background-color: $main_color;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,6 +51,8 @@ export default {
     h1 {
       font-family: Julius Sans One;
       font-size: 80px;
+      color: white;
+      user-select: none;
 
     }
   }

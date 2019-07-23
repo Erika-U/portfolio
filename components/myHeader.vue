@@ -28,6 +28,9 @@
   }
 </script>
 <style lang="scss" scoped>
+@import '@/assets/styles/_color.scss';
+@import '@/assets/styles/_mixin.scss';
+
   .link {
     display: flex;
     width: 100%;
@@ -48,9 +51,11 @@
       text-decoration: none;
       transition: all 0.3s;
       cursor: pointer;
+      user-select: none;
+      color: darken($main_color, 20%);
 
       &:hover {
-        background-color: lighten(pink, 8%);
+        background-color: lighten(pink, 5%);
       }
     }
   }

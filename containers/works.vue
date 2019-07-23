@@ -2,7 +2,10 @@
   <section id="works" class="works-wrapper">
     <pageTitle title="works" />
     <div class="box-wrapper">
-      <div></div>
+      <div>
+        <p>イメージ部分</p>
+        <p>説明部分</p>
+      </div>
       <div></div>
       <div></div>
     </div>
