@@ -1,8 +1,3 @@
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/portfolio/'
-  }
-} : {}
 
 export default {
   mode: 'spa',
@@ -57,5 +52,8 @@ export default {
     */
     extend(config, ctx) {
     }
+  },
+  router: {
+    base: '/portfolio/'
   }
 }
