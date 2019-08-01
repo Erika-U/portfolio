@@ -53,7 +53,18 @@ export default {
       font-size: 80px;
       color: white;
       user-select: none;
+    }
 
+    @media screen and (max-width: 1024px) {
+      h1 {
+        font-size: 50px;
+      }
+    }
+
+    @media screen and (max-width: 555px) {
+      h1 {
+        font-size: 40px;
+      }
     }
   }
 
