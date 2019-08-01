@@ -17,10 +17,6 @@
     "nuxt-webfontloader": "^1.1.0",
     "vue-scrollto": "^2.15.0"
   },
-  "scripts": {
-  "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
-  "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
-  },
   "devDependencies": {
     "node-sass": "^4.12.0",
     "nodemon": "^1.18.9",
