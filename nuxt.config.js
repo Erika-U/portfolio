@@ -1,4 +1,3 @@
-
 export default {
   mode: 'spa',
   /*
@@ -54,6 +53,6 @@ export default {
     }
   },
   router: {
-    base: '/portfolio/'
-  }
+  base: '/portfolio/'
+  },
 }
