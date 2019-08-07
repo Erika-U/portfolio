@@ -2,14 +2,12 @@
   <section id="works" class="works-wrapper">
     <pageTitle title="works" />
     <div class="box-wrapper">
-      <div>
-        <img src="@/assets/image/work1.png">
-        <p>- myPortfolio-</p>
-        <p>HTML5, SCSS, Vue.js, Nuxt.js</p>
-        <a href="https://github.com/Erika-U/portfolio" target=”_blank”>git hub</a>
+      <div v-for="work in works">
+        <img v-bind:src='work.image'>
+        <p>{{ work.title }}</p>
+        <p>{{ work.desc }}</p>
+        <a v-bind:href="work.url" target="_blank">git hub</a>
       </div>
-      <div></div>
-      <div></div>
     </div>
   </section>
 </template>
@@ -25,8 +23,14 @@
     data() {
       return {
         works: [
-          {key: 'Name',
-          value: 'erika'}
+          {image: require('@/assets/image/work1.png'),
+           title: '- myPortfolio-',
+           desc: 'HTML5, SCSS, Vue.js, Nuxt.js',
+           url: 'https://github.com/Erika-U/portfolio'},
+           {image: require('@/assets/image/work2.png'),
+            title: '-TODO List-',
+            desc: 'Docker, Laravel, SCSS, Vue.js, Vuex',
+            url: 'https://github.com/Erika-U/todo'},
         ]
       }
     }
@@ -46,7 +50,6 @@
         width: 400px;
         height: 600px;
         display: block;
-        margin-bottom: 30px;
         max-width: 450px;
 
       img {
