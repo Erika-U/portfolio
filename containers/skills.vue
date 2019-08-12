@@ -21,7 +21,7 @@
       return {
         skills: [
           '・ HTML5&CSS3',
-          '・ Sass',
+          '・ Sass', 
           '・ PHP',
           '・ Laravel',
           '・ JavaScript',
