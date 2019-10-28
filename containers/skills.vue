@@ -21,16 +21,16 @@
       return {
         skills: [
           '・ HTML5&CSS3',
-          '・ Sass', 
+          '・ Sass',
           '・ PHP',
           '・ Laravel',
-          '・ JavaScript',
           '・ Vue.js',
           '・ Docker',
           '・ MySQL',
           '・ Git',
           '・ Redmine',
           '・ slack'
+          '・ Illustrator'
         ]
       }
     }
