@@ -29,7 +29,7 @@
           '・ MySQL',
           '・ Git',
           '・ Redmine',
-          '・ slack'
+          '・ slack',
           '・ Illustrator'
         ]
       }
