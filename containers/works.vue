@@ -47,10 +47,8 @@
     .box-wrapper {
       div {
         margin: 0 auto;
-        width: 400px;
-        height: 600px;
+        margin-bottom: 75px;
         display: block;
-        max-width: 450px;
 
       img {
         width: 300px;
