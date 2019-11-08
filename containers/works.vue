@@ -68,23 +68,4 @@
 
 
 
-  @media(min-width:   1000px) {
-    div {
-      padding-left: 20px;
-      padding-right: 20px;
-      display: flex;
-      margin: 0 auto;
-    }
-  }
-
-  @media(min-width:   1200px) {
-    div {
-      padding-left: 20px;
-      padding-right: 20px;
-      display: flex;
-      margin: 0 auto;
-      max-width: 80%;
-    }
-  }
-
 </style>
