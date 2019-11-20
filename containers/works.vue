@@ -1,14 +1,14 @@
 <template>
   <section id="works" class="works-wrapper">
     <pageTitle title="works" />
-    <div class="box-wrapper">
-      <div v-for="work in works">
-        <img v-bind:src='work.image'>
+    <ul class="box-wrapper">
+      <li class="works-box-list" v-for="work in works">
+        <img class="works-box-image" v-bind:src='work.image'>
         <p>{{ work.title }}</p>
         <p>{{ work.desc }}</p>
         <a v-bind:href="work.url" target="_blank">git hub</a>
-      </div>
-    </div>
+      </li>
+    </ul>
   </section>
 </template>
 
@@ -43,29 +43,17 @@
 
   .works-wrapper {
     @include section;
-
-    .box-wrapper {
-      div {
-        margin: 0 auto;
-        margin-bottom: 75px;
-        display: block;
-
-      img {
-        width: 300px;
-        height: 300px;
-        }
-
-        a {
-          color: darken($main_color, 20%);
-
-          &:hover {
-            color: pink;
-          }
-        }
-      }
-    }
   }
-
+  .box-wrapper {
+    display: flex;
+  }
+  .works-box-list {
+    width: 50%;
+    list-style: none;
+  }
+  .works-box-image {
+    width: 300px;
+  }
 
 
 </style>
