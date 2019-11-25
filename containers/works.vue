@@ -45,11 +45,21 @@
     @include section;
   }
   .box-wrapper {
-    display: flex;
+    display: block;
+    padding-left: 0;
+    @media(min-width: 768px) {
+      display: flex;
+      text-align: center;
+    }
   }
   .works-box-list {
-    width: 50%;
+    width: auto;
     list-style: none;
+    margin-bottom: 45px;
+    @media(min-width: 768px) {
+      width: 50%;
+      margin-bottom: 0;
+    }
   }
   .works-box-image {
     width: 300px;
