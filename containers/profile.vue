@@ -11,7 +11,7 @@
           </tr>
         </tbody>
       </table>
-      <p>平成8年生まれ、現在23歳のErikaです。</p>
+      <p>平成8年生まれ、現在{{ nowAge }}歳のErikaです。</p>
       <p>元アパレル店員。接客を約1年半経験後、IT企業に1年半勤務。</p>
       <p>その後Webサイトの制作会社に入社</p>
       <p>現在はコーディングとデザインを行っています。</p>
@@ -40,6 +40,17 @@
           {key: '住所',
           value: '京都'}
         ]
+      }
+    },
+    computed: {
+      nowAge: function() {
+        var today = new Date();
+        var year = String(today.getFullYear());
+        var month = String(("0"+(today.getMonth() + 1)).slice(-2));
+        var day = String(("0"+today.getDate()).slice(-2));
+        var now = year + month + day;
+        var birthday = Math.floor((now - 19960901) / 10000);
+        return birthday;
       }
     }
   }
